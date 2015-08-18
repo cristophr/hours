@@ -10,7 +10,7 @@ class LogHours
     r = Redis.new(:url => ENV['REDIS_URL'])
     [200,
     {},
-    ENV['REDIS_URL']]
+    r.url]
 #   [200,
 #   {},
 #   File.open('public/index.html',
