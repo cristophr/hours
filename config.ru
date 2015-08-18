@@ -5,7 +5,6 @@ use Rack::Static,
 # rack app
 class LogHours
   def self.call(env)
-    puts rd.get 't'
     [200,
     {},
     File.open('public/index.html',
