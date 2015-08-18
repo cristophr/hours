@@ -13,10 +13,10 @@ class LogHours
       {},
       'Connected']
     end
-#   [200,
-#   {},
-#   File.open('public/index.html',
-#   File::RDONLY)]
+    [200,
+    {},
+    File.open('public/index.html',
+    File::RDONLY)]
   end
 end
 
