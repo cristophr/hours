@@ -7,9 +7,9 @@ use Rack::Static,
 class LogHours
 
   def self.call(env)
-    r = Redis.new(url: ENV['REDIS_URL'])
+    r = Redis.new(:url => ENV['REDIS_URL'])
     if r.connected?
-      [200,
+      return [200,
       {},
       'Connected']
     end
